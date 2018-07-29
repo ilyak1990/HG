@@ -1,0 +1,125 @@
+article, aside, figure, figcaption, footer, header, hgroup, section, nav{
+    display: block;
+}
+
+#html {
+    padding-left: 20%;
+    padding-right: 20%;
+    
+}
+
+ #Banner {
+    width: 100%;
+}
+#LeftBanner {
+    width: 18%;
+    
+}
+
+#RightBanner {
+    width: 40%;
+}
+
+#footer {
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+
+#NavBar {
+    width: 20%;
+    height: 200px;
+    float: left;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom : 50%;
+    line-height: 5.5em;
+    
+}
+
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: tomato;
+    font-size:35px;
+}
+
+article{
+    text-align:center;
+}
+
+
+
+nav td {
+    width: 10%;
+    text-align: center;
+}
+
+#terms {
+    text-align:center;
+}
+
+#contact {
+    text-align:center;
+}
+
+
+
+.headingStyle {
+    display:compact;
+    text-align: center;
+}
+
+
+
+#wrapper {
+margin:0 auto;
+}
+
+
+
+
+
+#MainTable {
+    text-align: center;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-right: 4%;
+}
+
+.test {
+     text-align: justify;
+}
+.active {
+    background-color: #4CAF50;
+    color: dodgerblue;
+}
+
+/*error page*/
+.errorPage{
+    background-image:url(../Images/Logo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.error{  
+    max-width:100%;
+    max-height:100%;
+    width:550px;
+    height:325px;
+    margin:auto;
+    margin-top:15%;
+    color:white;   
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size:25px;
+    text-align:center;
+    text-shadow: 1px 1px 1px black;
+    background-color:rgba(221, 221, 221, 0.30);
+    border-radius:10px;
+}
+.error a{
+    text-decoration:none;
+    color:white;
+}

@@ -1,0 +1,128 @@
+#banner {
+    background-color: skyblue;
+}
+
+#body {
+    /*border: groove black 5px;*/
+    background-color: white;
+    font-family:'Trebuchet MS';
+    width: 96%;
+}
+
+#background {
+    background-color: white;
+}
+
+
+#contentPlace {
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 15%;
+    border: groove black 5px;
+    border-color: deepskyblue;
+    background-image:url("../Images/2.jpg");
+    margin-bottom: 50%;
+}
+
+
+
+#MainTable {
+   
+}
+table{
+   margin-left:auto; 
+   margin-right:auto;
+}
+
+#ImageButton1 {
+    border: ridge 9px black;
+}
+.btnNav {
+
+    padding: 5px 7px;
+    font-family:'Trebuchet MS';
+    background-image: url(../Images/Background4.jpg);
+    border: ridge;
+    border-width: .5px;
+    border-color: black;
+    text-decoration-color: black;
+    font-size: 20px;
+}
+
+.btnNav:hover, .btnNav:focus {
+    background-color:deepskyblue;
+    border: solid 1px #2A4E77;
+    text-decoration-color:black;
+   
+}
+
+.btnFont {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.btnHome {
+    border: 3px groove white;
+}
+
+
+.form {
+    background-color:white;
+}
+
+.headingStyle {
+    display:compact;
+    text-align: center;
+    font-family:'Trebuchet MS';
+}
+
+footer {
+    background-color: white;
+}
+footer li {
+    list-style: none;
+    
+}
+footer a {
+    text-decoration: none;
+}
+img {
+    text-align:left;
+}
+
+table{
+    text-align:center;
+}
+
+#table1 {
+    padding-left: 10px;
+}
+
+/*error page*/
+.errorPage{
+    background-image:url(../Images/Logo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.error{  
+    max-width:100%;
+    max-height:100%;
+    width:550px;
+    height:325px;
+    margin:auto;
+    margin-top:15%;
+    color:white;   
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size:25px;
+    text-align:center;
+    text-shadow: 1px 1px 1px black;
+    background-color:rgba(221, 221, 221, 0.30);
+    border-radius:10px;
+}
+.error a{
+    text-decoration:none;
+    color:white;
+}

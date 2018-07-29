@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HealthGuardApp.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+    <link href="CSS/Layout.css" rel="stylesheet" />
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 18%;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <form id="form1" runat="server">
+        <div id="background">
+        <header>
+            <div id="banner">
+                <table id="Table1">
+                    <tr class="test">
+                        <td id="LeftBanner" class="auto-style1"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl= "~/Home.aspx" ImageUrl="~/Images/Logo.png" /></td>
+                        <td><asp:Label ID="logoName" runat="server" Text="Health Guarder" style="font-family:Verdana, Geneva, Tahoma, sans-serif" /></td>                 
+                        <td id="RightBanner" >
+                             <div id="Login">
+                                 <asp:LoginView ID="LoginView1" runat="server" >
+                                 <AnonymousTemplate>
+                                    You are not logged in. Click the Login link to sign in 
+                                </AnonymousTemplate>  
+                                     <LoggedInTemplate>
+                                    You are Logged in. Welcome, <asp:LoginName ID="LoginName1" runat="server" />
+                                        &nbsp;
+                               </LoggedInTemplate>
+                        </asp:LoginView><br />
+                                 <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+      </div>
+
+
+        <div id="Nav">
+            <nav>
+                <table id="NavBar">
+                    <tr>
+                        <td class="btnNav">
+                            <asp:LinkButton CssClass="btnFont" ID="btnHome" Text="Home" runat="server" PostBackUrl="~/Home.aspx"></asp:LinkButton>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="btnNav">
+                            <asp:LinkButton CssClass="btnFont" ID="btnMP" Text="My Profile" runat="server" PostBackUrl="~/MyProfile.aspx"></asp:LinkButton>
+                        </td>
+                    </tr>
+                   <tr>
+                        <td class="btnNav">
+                            <asp:LinkButton CssClass="btnFont" ID="btnTR" Text="Test Results" runat="server" PostBackUrl="~/Test_Result.aspx"></asp:LinkButton>
+                        </td>
+                    </tr>
+                         <tr>
+                        <td class="btnNav">
+                            <asp:LinkButton CssClass="btnFont" ID="btnAppointment" Text="Appointments" runat="server" PostBackUrl="~/Appointment.aspx"></asp:LinkButton>
+                        </td>
+                    </tr>
+                 
+                         <tr>
+                        <td class="btnNav">
+                            <asp:LinkButton CssClass="btnFont" ID="btnStatements" Text="Billing" runat="server" PostBackUrl="~/Statement.aspx"></asp:LinkButton>
+                        </td>
+                    </tr>
+                        <tr>
+                        <td class="btnNav">
+                            <asp:LinkButton CssClass="btnFont" ID="btnRegister" Text="Register" runat="server" PostBackUrl="~/Register.aspx"></asp:LinkButton>
+                        </td>
+                    </tr>
+                        
+                    
+                    <tr>
+                        <td><span></span></td>
+                    </tr>
+                    </table>
+
+            </nav>
+        </div>
+        
+         <div id="contentPlace">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+         
+           
+        </div>
+        
+    
+
+   </form>
+</body>
+</html>
